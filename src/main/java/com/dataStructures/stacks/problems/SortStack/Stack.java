@@ -47,7 +47,7 @@ public class Stack {
 
     public void display(){
         ArrayList<Integer> values = getList();
-        for(int i=0;i<=values.size()-1;i++){
+        for(int i=values.size()-1;i>=0;i--){
             System.out.println(values.get(i));
         }
     }

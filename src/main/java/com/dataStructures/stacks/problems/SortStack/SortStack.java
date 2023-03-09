@@ -10,36 +10,51 @@ public class SortStack {
         stack2 = new Stack();
     }
 
+
+
     public Stack sort(){
+        // push first element of stack1 to stack2
         stack2.push(stack1.pop());
+
+        //compare top elements
         while(!stack1.isEmpty()){
-            while(!stack1.isEmpty() && !stack2.isEmpty() && stack1.peek() > stack2.peek()){
-                stack2.push(stack1.pop());
-            }
-            int x = stack1.pop();
-            while(!stack2.isEmpty() && x< stack2.peek()){
-                stack1.push(stack2.pop());
-            }
-            stack2.push(x);
+            compare();
         }
-        stack1.push(stack2.pop());
+
+        while(!stack2.isEmpty()){
+            stack1.push(stack2.pop());
+        }
+
         return stack1;
+
     }
 
-    public Stack sort2(){
-        stack2.push(stack1.pop());
-        while(!stack1.isEmpty()){
-            while(!stack1.isEmpty() && !stack2.isEmpty() && stack1.peek() > stack2.peek()){
+    public void compare(){
+        if(stack2.isEmpty()){
+            stack2.push(stack1.pop());
+        }else{
+            //if top of stack1 is less than top of stack2
+            if(stack1.peek()<=stack2.peek()){
+                //add top element of stack1 to variable
+                int x = stack1.pop();
+                // push all elements greater than
+                // top of stack1 in stack2 to stack1
+                while(!stack2.isEmpty()){
+                    if(stack2.peek()>x){
+                        stack1.push( stack2.pop());
+                    }else {
+                        break;
+                    }
+                }
+                stack2.push(x);
+
+            }//if top of stack1 is more than top of stack2
+            else{
                 stack2.push(stack1.pop());
+
             }
-            int x = stack1.pop();
-            while(!stack2.isEmpty() && x< stack2.peek()){
-                stack1.push(stack2.pop());
-            }
-            stack2.push(x);
         }
-        stack1.push(stack2.pop());
-        return stack1;
+
     }
 
 }
