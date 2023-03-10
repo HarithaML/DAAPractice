@@ -1,0 +1,18 @@
+1. Queue
+2. Dogs And Cats
+4. Animal
+       age
+       typec-> dog or cat
+3. Animal Shelter
+    Variables
+
+    -> ArrayList of Animal
+    Functions
+    -> get oldest cat (dequeueCat)
+
+    -> get oldest dog (dequeueDo)
+    -> get oldest of ALL ANIMALS (dequeueAny)
+        1. get max age animal
+        2. if same age animal which entered first
+    -> add animal -> enqueue
+    ->

@@ -1,6 +1,4 @@
-package com.dataStructures.stacks.problems.SortStack;
-
-import java.util.ArrayList;
+package com.dataStructures.stacks.problems.sortStack;
 
 public class SortStack {
     Stack stack1;

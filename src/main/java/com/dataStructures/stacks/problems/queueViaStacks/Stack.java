@@ -1,4 +1,4 @@
-package com.dataStructures.stacks.problems.SortStack;
+package com.dataStructures.stacks.problems.queueViaStacks;
 
 import java.util.ArrayList;
 
@@ -42,14 +42,6 @@ public class Stack {
 
     public ArrayList<Integer> getList(){
         return this.stackArray ;
-    }
-
-
-    public void display(){
-        ArrayList<Integer> values = getList();
-        for(int i=values.size()-1;i>=0;i--){
-            System.out.println(values.get(i));
-        }
     }
 
 }

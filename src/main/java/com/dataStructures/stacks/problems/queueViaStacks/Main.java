@@ -1,4 +1,4 @@
-package com.dataStructures.stacks.problems.QueueViaStacks;
+package com.dataStructures.stacks.problems.queueViaStacks;
 
 public class Main {
 

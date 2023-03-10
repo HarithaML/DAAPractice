@@ -1,0 +1,10 @@
+1. Add the first top element of stack1 to stack2
+2. Compare the top of stack1 with top of stack2
+3. if top of stack1 is less than top of stack2
+    1. put it in a variable and pop
+    2. push all the elements of stack2 greater than top to stack1
+    3.push the variable to stack2
+    continue compare
+4. if top of stack1 is more than top of stack2
+    1. push to stack2
+    continue compare

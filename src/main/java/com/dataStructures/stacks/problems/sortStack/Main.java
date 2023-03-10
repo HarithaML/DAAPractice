@@ -1,4 +1,4 @@
-package com.dataStructures.stacks.problems.SortStack;
+package com.dataStructures.stacks.problems.sortStack;
 
 public class Main {
     /*

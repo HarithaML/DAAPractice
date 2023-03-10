@@ -1,4 +1,4 @@
-package com.dataStructures.stacks.problems.QueueViaStacks;
+package com.dataStructures.stacks.problems.queueViaStacks;
 
 import java.util.ArrayList;
 
